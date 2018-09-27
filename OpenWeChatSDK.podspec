@@ -95,7 +95,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "Classes/**/*.h"
-
+  s.vendored_libraries  = 'libWeChatSDK.a'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
