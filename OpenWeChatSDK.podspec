@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "OpenWeChatSDK"
   s.version      = "1.8.3"
-  s.summary      = "A short description of OpenWeChatSDK.A short description of OpenWeChatSDK."
+  s.summary      = "Mirror of OpenWeChatSDK.Make it easier~"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/JarvanMo/OpenWeChatSDK", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/JarvanMo/OpenWeChatSDK.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
