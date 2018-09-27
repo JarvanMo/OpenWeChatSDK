@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenWeChatSDK"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of OpenWeChatSDK."
+  s.version      = "1.8.3"
+  s.summary      = "A short description of OpenWeChatSDK.A short description of OpenWeChatSDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   DESC
+                   OpenWeChatSDKOpenWeChatSDKOpenWeChatSDKOpenWeChatSDKOpenWeChatSDKOpenWeChatSDKOpenWeChatSDK
 
-  s.homepage     = "http://EXAMPLE/OpenWeChatSDK"
+  s.homepage     = "https://github.com/JarvanMo/OpenWeChatSDK"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios
+   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/OpenWeChatSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/JarvanMo/OpenWeChatSDK", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
