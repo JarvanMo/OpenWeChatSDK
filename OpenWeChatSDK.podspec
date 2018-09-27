@@ -8,9 +8,7 @@ Pod::Spec.new do |s|
   }
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.homepage = "https://github.com/JarvanMo/OpenWeChatSDK"
-  s.authors = {
-    "JarvanMo" => "jarvan.mo@gmail.com"
-  }
+  s.authors = { "JarvanMo" => "jarvan.mo@gmail.com" }
   s.source = {
     :git => "https://github.com/JarvanMo/OpenWeChatSDK.git",
     :tag => "#{s.version}"
