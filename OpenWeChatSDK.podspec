@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     :git => "https://github.com/JarvanMo/OpenWeChatSDK.git",
     :tag => "#{s.version}"
   }
-  s.platform = :ios,'9.0'
+  s.platform = :ios,'8.0'
   s.source_files = "Classes/*.h"
   s.public_header_files = "Classes/*.h"
   s.preserve_paths = "libWeChatSDK.a"
