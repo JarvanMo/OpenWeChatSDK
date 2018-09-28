@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = "libWeChatSDK.a"
 #  s.vendored_libraries = "libWeChatSDK.a"
 
-  s.requires_arc = false
+  s.requires_arc = true
   s.frameworks = 'SystemConfiguration','CoreTelephony'
   s.libraries = 'z', 'sqlite3.0', 'c++'
 
