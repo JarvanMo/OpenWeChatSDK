@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = "OpenWeChatSDK"
-  s.version = "1.8.3+4"
+  s.version = "1.8.3+5"
   s.license = {
     :type => "MIT",
     :text => "LICENSE"
@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   }
   s.platform = :ios,'8.0'
   s.module_name = 'OpenWeChatSDK'
-  s.source_files = "**/*.{h,m}"
-  s.public_header_files = "**/*.h"
+  s.source_files = "Headers/**/*.{h,m}"
+  s.public_header_files = "Headers/**/*.h"
   s.vendored_libraries = "**/*.a"
   s.static_framework=true
   s.preserve_paths = "libWeChatSDK.a"
