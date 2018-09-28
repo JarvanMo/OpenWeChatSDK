@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = "OpenWeChatSDK"
-  s.version = "1.8.3+2"
+  s.version = "1.8.3+3"
   s.license = {
     :type => "MIT",
     :text => "LICENSE"
