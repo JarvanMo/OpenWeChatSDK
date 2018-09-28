@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}"
   }
   s.platform = :ios,'8.0'
-  
+  s.module_name = 'OpenWeChatSDK'
   s.source_files = "**/*.{h,m}"
   s.public_header_files = "**/*.h"
   s.vendored_libraries = "**/*.a"
