@@ -26,6 +26,8 @@ Pod::Spec.new do |s|
   s.frameworks = 'SystemConfiguration','CoreTelephony'
   s.libraries = 'z', 'sqlite3.0', 'c++'
 
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
+  
   s.prepare_command = <<-EOF
     # 创建Base Module
     rm -rf Modules
