@@ -1,0 +1,9 @@
+framework module OpenWeChatSDK {
+  umbrella header "WechatAuthSDK.h"
+  umbrella header "WXApi.h"
+  umbrella header "WXApiObject.h"
+  export *
+  link "c++"
+  link "z"
+  link "sqlite3.0"
+}
