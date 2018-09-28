@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name = "OpenWeChatSDK"
-  s.version = "1.8.3+5"
+  s.version = "1.8.3+9"
   s.license = {
     :type => "MIT",
     :text => "LICENSE"
@@ -28,22 +28,6 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-all_load' }
   
-  s.prepare_command = <<-EOF
-    # 创建Base Module
-    rm -rf Modules
-    mkdir Modules
-    touch Modules/module.modulemap
-    cat <<-EOF > Modules/module.modulemap
-    framework module OpenWeChatSDK {
-      umbrella header "WechatAuthSDK.h"
-      umbrella header "WXApi.h"
-      umbrella header "WXApiObject.h"
-      export *
-      link "c++"
-      link "z"
-      link "sqlite3.0"
-    }
-    \EOF
-  EOF
+
 
 end
