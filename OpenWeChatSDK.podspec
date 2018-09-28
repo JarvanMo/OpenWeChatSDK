@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OpenWeChatSDK"
-  s.version = "1.8.3+6"
+  s.version = "1.8.3+7"
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.license = {"type"=>"MIT", "text"=>"LICENSE"}
   s.authors = {"JarvanMo"=>"jarvan.mo@gmail.com"}
@@ -16,21 +16,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target    = '8.0'
   s.ios.vendored_framework   = 'OpenWeChatSDK.framework'
-   s.prepare_command = <<-EOF
-    # 创建Base Module
-    rm -rf OpenWeChatSDK.framework/Modules
-    mkdir OpenWeChatSDK.framework/Modules
-    touch OpenWeChatSDK.framework/Modules/module.modulemap
-    cat <<-EOF > OpenWeChatSDK.framework/Modules/module.modulemap
-    framework module OpenWeChatSDK {
-      umbrella header "WechatAuthSDK.h"
-      umbrella header "WXApi.h"
-      umbrella header "WXApiObject.h"
-      export *
-      link "c++"
-      link "z"
-      link "sqlite3.0"
-    }
-    \EOF
-  EOF
+
 end
