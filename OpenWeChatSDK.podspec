@@ -14,10 +14,13 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}"
   }
   s.platform = :ios,'8.0'
-  s.source_files = "*.h"
-  s.public_header_files = "*.h"
+  
+  s.source_files = "**/*.{h,m}"
+  s.public_header_files = "**/*.h"
+  s.vendored_libraries = "**/*.a"
+
   s.preserve_paths = "libWeChatSDK.a"
-  s.vendored_libraries = "libWeChatSDK.a"
+#  s.vendored_libraries = "libWeChatSDK.a"
 
   s.requires_arc = false
   s.frameworks = 'SystemConfiguration','CoreTelephony'
