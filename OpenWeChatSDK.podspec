@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "libWeChatSDK.a"
 
   s.platform      = :ios,'8.0'
-  s.vendored_framework   = 'OpenWeChatSDK.framework'
+  s.vendored_frameworks   = 'OpenWeChatSDK.framework'
 end
