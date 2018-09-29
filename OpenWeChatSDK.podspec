@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   }
 
   s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'ios/OpenWeChatSDK.framework'
+  s.ios.vendored_framework   = 'OpenWeChatSDK.framework'
 end
