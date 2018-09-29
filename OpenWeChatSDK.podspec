@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}"
   }
 
-  s.ios.deployment_target    = '8.0'
-  s.ios.vendored_framework   = 'OpenWeChatSDK.framework'
+  s.platform      = :ios,'8.0'
+  s.vendored_framework   = 'OpenWeChatSDK.framework'
 end
