@@ -13,6 +13,9 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}"
   }
 
+  s.preserve_paths = "libWeChatSDK.a"
+  s.vendored_libraries = "libWeChatSDK.a"
+
   s.platform      = :ios,'8.0'
   s.vendored_framework   = 'OpenWeChatSDK.framework'
 end
