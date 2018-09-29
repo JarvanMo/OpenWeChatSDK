@@ -1,7 +1,15 @@
+#
+# Be sure to run `pod lib lint OpenWeChatSDK.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
+
 Pod::Spec.new do |s|
 
   s.name = "OpenWeChatSDK"
-  s.version = "1.8.3+9"
+  s.version = "1.8.3+10"
   s.license = {
     :type => "MIT",
     :text => "LICENSE"
@@ -13,15 +21,13 @@ Pod::Spec.new do |s|
     :git => "https://github.com/JarvanMo/OpenWeChatSDK.git",
     :tag => "#{s.version}"
   }
-  s.platform = :ios,'8.0'
-  s.module_name = 'OpenWeChatSDK'
-  s.source_files = "Headers/**/*.{h,m}"
-  s.public_header_files = "Headers/**/*.h"
+
+  s.source_files = 'OpenWeChatSDK/Classes/**/*'
   s.vendored_libraries = "**/*.a"
   s.static_framework=true
-  s.preserve_paths = "libWeChatSDK.a"
-#  s.vendored_libraries = "libWeChatSDK.a"
-
+  s.preserve_paths = "OpenWeChatSDK/libWeChatSDK.a"
+  s.vendored_libraries = "OpenWeChatSDK/libWeChatSDK.a"
+  s.public_header_files = 'OpenWeChatSDK/Classes/**/*.h'
   s.requires_arc = true
   s.frameworks = 'SystemConfiguration','CoreTelephony'
   s.libraries = 'z', 'sqlite3.0', 'c++'
@@ -30,4 +36,15 @@ Pod::Spec.new do |s|
   
 
 
+  s.ios.deployment_target = '8.0'
+
+
+  
+  # s.resource_bundles = {
+  #   'OpenWeChatSDK' => ['OpenWeChatSDK/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
