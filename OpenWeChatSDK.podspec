@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Library/include/**/*.h'
   s.vendored_libraries = 'Pod/Library/lib/**/*.a'
   s.frameworks  = 'CFNetwork', 'Security', 'CoreTelephony', 'SystemConfiguration', 'UIKit', 'CoreGraphics', 'Foundation', 'WebKit'
+  s.libraries = 'z', 'sqlite3.0', 'c++'
 
   # s.default_subspec = "precompiled"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
