@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
 
   s.frameworks  = 'CFNetwork', 'Security', 'CoreTelephony', 'SystemConfiguration', 'UIKit', 'CoreGraphics', 'Foundation', 'WebKit'
 
-  s.default_subspec = "precompiled"
+  # s.default_subspec = "precompiled"
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
   
-  s.subspec "precompiled" do |ss|
-    ss.preserve_paths         = "Pod/Library/include/WeChat/*.h", 'Pod/Library/lib/*.a'
-    ss.vendored_libraries   = 'Pod/Library/lib/*.a'
-    ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/Headers/Public/#{s.name}" }
-  end
+  # s.subspec "precompiled" do |ss|
+  #   ss.preserve_paths         = "Pod/Library/include/WeChat/*.h", 'Pod/Library/lib/*.a'
+  #   ss.vendored_libraries   = 'Pod/Library/lib/*.a'
+  #   ss.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/Headers/Public/#{s.name}" }
+  # end
 end
