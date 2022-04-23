@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OpenWeChatSDK"
-  s.version = "1.9.2"
+  s.version = "1.9.2+1"
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.license = {"type"=>"MIT", "text"=>"LICENSE"}
   s.authors = {"JarvanMo"=>"jarvan.mo@gmail.com"}
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Classes/**/*'
   s.public_header_files = "Pod/Library/include/WeChat/*.h"
   s.source_files = 'Pod/Library/include/**/*.h'
-
+  s.vendored_libraries = 'Pod/Library/lib/**/*.a'
   s.frameworks  = 'CFNetwork', 'Security', 'CoreTelephony', 'SystemConfiguration', 'UIKit', 'CoreGraphics', 'Foundation', 'WebKit'
 
   # s.default_subspec = "precompiled"
