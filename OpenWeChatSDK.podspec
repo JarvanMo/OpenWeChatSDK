@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "OpenWeChatSDK"
-  s.version = "1.9.6"
+  s.version = "1.9.9"
   s.summary = "WeChatSDK for Cocoapods convenience."
   s.license = {"type"=>"MIT", "text"=>"LICENSE"}
   s.authors = {"JarvanMo"=>"jarvan.mo@gmail.com"}
